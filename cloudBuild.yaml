@@ -1,4 +1,17 @@
 steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "container",
+        "clusters",
+        "get-credentials",
+        "quizspark-cluster",
+        "--zone",
+        "australia-southeast2",
+        "--project",
+        "quizspark",
+      ]
+
   # Build and push the backend image using Kaniko
   - name: "gcr.io/kaniko-project/executor:latest"
     args:
