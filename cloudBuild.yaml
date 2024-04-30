@@ -1,19 +1,19 @@
 steps:
   # Build and push the backend image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/backend:${SHORT_SHA:-latest}", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/backend:test", "."]
     dir: "backend/"
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/backend:${SHORT_SHA:-latest}", "."]
+    args: ["push", "gcr.io/$PROJECT_ID/backend:test", "."]
 
   # Build and push the frontend image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/frontend:${SHORT_SHA:-latest}", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/frontend:test", "."]
     dir: "frontend/"
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/frontend:${SHORT_SHA:-latest}", "."]
+    args: ["push", "gcr.io/$PROJECT_ID/frontend:test", "."]
 
   # Apply Kubernetes configurations
   - name: "gcr.io/cloud-builders/kubectl"
