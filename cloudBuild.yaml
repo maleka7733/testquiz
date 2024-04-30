@@ -15,7 +15,7 @@ steps:
   # Build and push the backend image using Kaniko
   - name: "gcr.io/kaniko-project/executor:latest"
     args:
-      - "--destination=gcr.io/$PROJECT_ID/backend:latest"
+      - "--destination=gcr.io/quizspark/my-app-backend:latest"
       - "--context=dir://backend"
       - "--dockerfile=backend/Dockerfile"
       - "--cache=true"
@@ -23,7 +23,7 @@ steps:
   # Build and push the frontend image using Kaniko
   - name: "gcr.io/kaniko-project/executor:latest"
     args:
-      - "--destination=gcr.io/$PROJECT_ID/frontend:latest"
+      - "--destination=gcr.io/quizspark/my-app-frontend:latest"
       - "--context=dir://frontend"
       - "--dockerfile=frontend/Dockerfile"
       - "--cache=true"
