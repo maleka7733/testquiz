@@ -1,0 +1,39 @@
+steps:
+  # Build and push the backend image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/backend:$SHORT_SHA", "."]
+    dir: "backend/"
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/backend:$SHORT_SHA"]
+
+  # Build and push the frontend image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/frontend:$SHORT_SHA", "."]
+    dir: "frontend/"
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/frontend:$SHORT_SHA"]
+
+  # Apply Kubernetes configurations
+  - name: "gcr.io/cloud-builders/kubectl"
+    args: ["apply", "-f", "k8-backend.yaml"]
+    env:
+      ["CLOUDSDK_COMPUTE_ZONE=australia-southeast2", "CLOUDSDK_CONTAINER_CLUSTER=quizspark-cluster"]
+
+  - name: "gcr.io/cloud-builders/kubectl"
+    args: ["apply", "-f", "k8-frontend.yaml"]
+    env:
+      ["CLOUDSDK_COMPUTE_ZONE=australia-southeast2", "CLOUDSDK_CONTAINER_CLUSTER=quizspark-cluster"]
+
+  - name: "gcr.io/cloud-builders/kubectl"
+    args: ["apply", "-f", "k8-frontend-service.yaml"]
+    env:
+      ["CLOUDSDK_COMPUTE_ZONE=australia-southeast2", "CLOUDSDK_CONTAINER_CLUSTER=quizspark-cluster"]
+
+  - name: "gcr.io/cloud-builders/kubectl"
+    args: ["apply", "-f", "k8-mongo.yaml"]
+    env:
+      ["CLOUDSDK_COMPUTE_ZONE=australia-southeast2", "CLOUDSDK_CONTAINER_CLUSTER=quizspark-cluster"]
+
+timeout: "1600s"
