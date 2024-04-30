@@ -1,0 +1,31 @@
+.quiz_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.check_answers {
+	margin: 1em;
+	max-width: 40%;
+	align-self: center;
+}
+.results {
+	font-size: 3em;
+	text-align: center;
+	font-weight: bolder;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	margin-top: 1em;
+}
+
+.quiz_container h2 {
+	font-size: 2em;
+	text-align: center;
+	color: var(--accent-color);
+}
+
+.return-home-button {
+	margin: 2em auto;
+	max-width: 40%;
+}

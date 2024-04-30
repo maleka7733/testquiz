@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    develop:
+      watch:
+        - path: ./frontend/package.json
+          action: rebuild
+        - path: ./frontend
+          target: /usr/src/app
+          action: sync
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGO_DB_URI=mongodb://mongo/mydatabase
+    depends_on:
+      - mongo
+    develop:
+      watch:
+        - path: ./backend
+          target: /usr/src/app
+          action: sync
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"

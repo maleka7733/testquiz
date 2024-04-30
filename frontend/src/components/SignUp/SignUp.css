@@ -1,0 +1,21 @@
+.sign_up_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sign_up_h2 {
+	margin-bottom: 2rem;
+}
+
+.sign_up_button {
+	background-color: #4caf50; /* Green background for active state */
+	color: white;
+}
+
+.sign_up_button_disabled {
+	background-color: #ccc; /* Gray background for disabled state */
+	color: #666;
+	cursor: not-allowed;
+}

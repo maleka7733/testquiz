@@ -1,0 +1,14 @@
+{
+	"name": "interactive-quiz",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "docker-compose up -d --build",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"server": "cd backend && nodemon src/server.js",
+		"client": "cd frontend && npm start"
+	},
+	"dependencies": {
+		"concurrently": "^8.2.2",
+		"nodemon": "^3.1.0"
+	}
+}
