@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
 	return (
 		<header>
-			<h1>Quiz Spark!</h1>
+			<h1>Quiz Spark!!</h1>
 		</header>
 	);
 };
