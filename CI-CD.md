@@ -63,3 +63,5 @@ To manage permissions and security within GCP, we utilize IAM roles to ensure th
 
 # Conclusion
 The above configuration ensures a seamless flow from development to production. By leveraging Docker for local development, Kubernetes for orchestration, and GCP for CI/CD automation, we maintain a robust, scalable, and efficient workflow.
+
+
