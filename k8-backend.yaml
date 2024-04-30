@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: gcr.io/quizspark/my-app-backend:v3
+          image: gcr.io/quizspark/my-app-backend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
