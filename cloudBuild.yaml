@@ -15,7 +15,7 @@ steps:
   # Build and push the backend image using Kaniko
   - name: "gcr.io/kaniko-project/executor:latest"
     args:
-      - "--destination=gcr.io/$PROJECT_ID/backend:test"
+      - "--destination=gcr.io/$PROJECT_ID/backend:latest"
       - "--context=dir://backend"
       - "--dockerfile=backend/Dockerfile"
       - "--cache=true"
@@ -23,7 +23,7 @@ steps:
   # Build and push the frontend image using Kaniko
   - name: "gcr.io/kaniko-project/executor:latest"
     args:
-      - "--destination=gcr.io/$PROJECT_ID/frontend:test"
+      - "--destination=gcr.io/$PROJECT_ID/frontend:latest"
       - "--context=dir://frontend"
       - "--dockerfile=frontend/Dockerfile"
       - "--cache=true"
