@@ -35,3 +35,141 @@ backend-1   |     commonWireVersion: 0,
 backend-1   |     logicalSessionTimeoutMinutes: null
 backend-1   |   },
 backend-1   |   code: undefined
+------------------------------------------------------------------------------
+
+Error signup: 
+Object { stack: "AxiosError@http://localhost:3000/static/js/bundle.js:52664:18\nsettle@http://localhost:3000/static/js/bundle.js:53319:12\nonloadend@http://localhost:3000/static/js/bundle.js:51979:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:3000/static/js/bundle.js:51992:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:3000/static/js/bundle.js:51925:10\ndispatchRequest@http://localhost:3000/static/js/bundle.js:53145:10\n_request@http://localhost:3000/static/js/bundle.js:52581:77\nrequest@http://localhost:3000/static/js/bundle.js:52476:25\nhttpMethod@http://localhost:3000/static/js/bundle.js:52615:19\nwrap@http://localhost:3000/static/js/bundle.js:53711:15\nhandleSignUp@http://localhost:3000/static/js/bundle.js:1716:51\ncallCallback@http://localhost:3000/static/js/bundle.js:15813:18\ninvokeGuardedCallbackDev@http://localhost:3000/static/js/bundle.js:15857:20\ninvokeGuardedCallback@http://localhost:3000/static/js/bundle.js:15914:35\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:3000/static/js/bundle.js:15928:29\nexecuteDispatch@http://localhost:3000/static/js/bundle.js:20071:46\nprocessDispatchQueueItemsInOrder@http://localhost:3000/static/js/bundle.js:20097:26\nprocessDispatchQueue@http://localhost:3000/static/js/bundle.js:20108:41\ndispatchEventsForPlugins@http://localhost:3000/static/js/bundle.js:20117:27\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:3000/static/js/bundle.js:20277:16\nbatchedUpdates$1@http://localhost:3000/static/js/bundle.js:34661:16\nbatchedUpdates@http://localhost:3000/static/js/bundle.js:15661:16\ndispatchEventForPluginEventSystem@http://localhost:3000/static/js/bundle.js:20276:21\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:3000/static/js/bundle.js:17783:42\ndispatchEvent@http://localhost:3000/static/js/bundle.js:17777:88\ndispatchDiscreteEvent@http://localhost:3000/static/js/bundle.js:17754:22\nEventListener.handleEvent*addEventBubbleListener@http://localhost:3000/static/js/bundle.js:17976:14\naddTrappedEventListener@http://localhost:3000/static/js/bundle.js:20199:33\nlistenToNativeEvent@http://localhost:3000/static/js/bundle.js:20143:30\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:3000/static/js/bundle.js:20154:34\nlistenToAllSupportedEvents@http://localhost:3000/static/js/bundle.js:20149:25\ncreateRoot@http://localhost:3000/static/js/bundle.js:37422:33\ncreateRoot$1@http://localhost:3000/static/js/bundle.js:37768:14\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:3000/static/js/bundle.js:37844:16\n./src/index.js@http://localhost:3000/static/js/bundle.js:1891:60\noptions.factory@http://localhost:3000/static/js/bundle.js:56062:31\n__webpack_require__@http://localhost:3000/static/js/bundle.js:55483:32\n@http://localhost:3000/static/js/bundle.js:56644:56\n@http://localhost:3000/static/js/bundle.js:56646:12\n", message: "Request failed with status code 400", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+​
+code: "ERR_BAD_REQUEST"
+​
+config: Object { timeout: 0, xsrfCookieName: "XSRF-TOKEN", xsrfHeaderName: "X-XSRF-TOKEN", … }
+​
+message: "Request failed with status code 400"
+​
+name: "AxiosError"
+​
+request: XMLHttpRequest { readyState: 4, timeout: 0, withCredentials: false, … }
+​
+response: Object { data: {…}, status: 400, statusText: "Bad Request", … }
+​
+stack: "AxiosError@http://localhost:3000/static/js/bundle.js:52664:18\nsettle@http://localhost:3000/static/js/bundle.js:53319:12\nonloadend@http://localhost:3000/static/js/bundle.js:51979:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:3000/static/js/bundle.js:51992:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:3000/static/js/bundle.js:51925:10\ndispatchRequest@http://localhost:3000/static/js/bundle.js:53145:10\n_request@http://localhost:3000/static/js/bundle.js:52581:77\nrequest@http://localhost:3000/static/js/bundle.js:52476:25\nhttpMethod@http://localhost:3000/static/js/bundle.js:52615:19\nwrap@http://localhost:3000/static/js/bundle.js:53711:15\nhandleSignUp@http://localhost:3000/static/js/bundle.js:1716:51\ncallCallback@http://localhost:3000/static/js/bundle.js:15813:18\ninvokeGuardedCallbackDev@http://localhost:3000/static/js/bundle.js:15857:20\ninvokeGuardedCallback@http://localhost:3000/static/js/bundle.js:15914:35\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:3000/static/js/bundle.js:15928:29\nexecuteDispatch@http://localhost:3000/static/js/bundle.js:20071:46\nprocessDispatchQueueItemsInOrder@http://localhost:3000/static/js/bundle.js:20097:26\nprocessDispatchQueue@http://localhost:3000/static/js/bundle.js:20108:41\ndispatchEventsForPlugins@http://localhost:3000/static/js/bundle.js:20117:27\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:3000/static/js/bundle.js:20277:16\nbatchedUpdates$1@http://localhost:3000/static/js/bundle.js:34661:16\nbatchedUpdates@http://localhost:3000/static/js/bundle.js:15661:16\ndispatchEventForPluginEventSystem@http://localhost:3000/static/js/bundle.js:20276:21\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:3000/static/js/bundle.js:17783:42\ndispatchEvent@http://localhost:3000/static/js/bundle.js:17777:88\ndispatchDiscreteEvent@http://localhost:3000/static/js/bundle.js:17754:22\nEventListener.handleEvent*addEventBubbleListener@http://localhost:3000/static/js/bundle.js:17976:14\naddTrappedEventListener@http://localhost:3000/static/js/bundle.js:20199:33\nlistenToNativeEvent@http://localhost:3000/static/js/bundle.js:20143:30\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:3000/static/js/bundle.js:20154:34\nlistenToAllSupportedEvents@http://localhost:3000/static/js/bundle.js:20149:25\ncreateRoot@http://localhost:3000/static/js/bundle.js:37422:33\ncreateRoot$1@http://localhost:3000/static/js/bundle.js:37768:14\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:3000/static/js/bundle.js:37844:16\n./src/index.js@http://localhost:3000/static/js/bundle.js:1891:60\noptions.factory@http://localhost:3000/static/js/bundle.js:56062:31\n__webpack_require__@http://localhost:3000/static/js/bundle.js:55483:32\n@http://localhost:3000/static/js/bundle.js:56644:56\n@http://localhost:3000/static/js/bundle.js:56646:12\n"
+​
+<prototype>: Object { constructor: AxiosError(message, code, config, request, response), toJSON: toJSON()
+, stack: "", … }
+SingUp.js:49
+    handleSignUp SingUp.js:49
+    (Async: promise callback)
+    handleSignUp SingUp.js:46
+    React 23
+"AxiosError@http://localhost:3000/static/js/bundle.js:52664:18\nsettle@http://localhost:3000/static/js/bundle.js:53319:12\nonloadend@http://localhost:3000/static/js/bundle.js:51979:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:3000/static/js/bundle.js:51992:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:3000/static/js/bundle.js:51925:10\ndispatchRequest@http://localhost:3000/static/js/bundle.js:53145:10\n_request@http://localhost:3000/static/js/bundle.js:52581:77\nrequest@http://localhost:3000/static/js/bundle.js:52476:25\nhttpMethod@http://localhost:3000/static/js/bundle.js:52615:19\nwrap@http://localhost:3000/static/js/bundle.js:53711:15\nhandleSignUp@http://localhost:3000/static/js/bundle.js:1716:51\ncallCallback@http://localhost:3000/static/js/bundle.js:15813:18\ninvokeGuardedCallbackDev@http://localhost:3000/static/js/bundle.js:15857:20\ninvokeGuardedCallback@http://localhost:3000/static/js/bundle.js:15914:35\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:3000/static/js/bundle.js:15928:29\nexecuteDispatch@http://localhost:3000/static/js/bundle.js:20071:46\nprocessDispatchQueueItemsInOrder@http://localhost:3000/static/js/bundle.js:20097:26\nprocessDispatchQueue@http://localhost:3000/static/js/bundle.js:20108:41\ndispatchEventsForPlugins@http://localhost:3000/static/js/bundle.js:20117:27\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:3000/static/js/bundle.js:20277:16\nbatchedUpdates$1@http://localhost:3000/static/js/bundle.js:34661:16\nbatchedUpdates@http://localhost:3000/static/js/bundle.js:15661:16\ndispatchEventForPluginEventSystem@http://localhost:3000/static/js/bundle.js:20276:21\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:3000/static/js/bundle.js:17783:42\ndispatchEvent@http://localhost:3000/static/js/bundle.js:17777:88\ndispatchDiscreteEvent@http://localhost:3000/static/js/bundle.js:17754:22\nEventListener.handleEvent*addEventBubbleListener@http://localhost:3000/static/js/bundle.js:17976:14\naddTrappedEventListener@http://localhost:3000/static/js/bundle.js:20199:33\nlistenToNativeEvent@http://localhost:3000/static/js/bundle.js:20143:30\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:3000/static/js/bundle.js:20154:34\nlistenToAllSupportedEvents@http://localhost:3000/static/js/bundle.js:20149:25\ncreateRoot@http://localhost:3000/static/js/bundle.js:37422:33\ncreateRoot$1@http://localhost:3000/static/js/bundle.js:37768:14\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:3000/static/js/bundle.js:37844:16\n./src/index.js@http://localhost:3000/static/js/bundle.js:1891:60\noptions.factory@http://localhost:3000/static/js/bundle.js:56062:31\n__webpack_require__@http://localhost:3000/static/js/bundle.js:55483:32\n@http://localhost:3000/static/js/bundle.js:56644:56\n@http://localhost:3000/static/js/bundle.js:56646:12\n"
+    js index.js:7
+    factory react refresh:6
+    Webpack 3
+
+----------------------------------------------
+
+✔ Container testquiz-mongo-1     Created                                                                                      0.0s 
+ ✔ Container testquiz-backend-1   Created                                                                                      0.0s 
+ ✔ Container testquiz-frontend-1  Recreated                                                                                    0.2s 
+Attaching to backend-1, frontend-1, mongo-1
+mongo-1     | 
+mongo-1     | WARNING: MongoDB 5.0+ requires a CPU with AVX support, and your current system does not appear to have that!
+mongo-1     |   see https://jira.mongodb.org/browse/SERVER-54407
+mongo-1     |   see also https://www.mongodb.com/community/forums/t/mongodb-5-0-cpu-intel-g4650-compatibility/116610/2
+mongo-1     |   see also https://github.com/docker-library/mongo/issues/485#issuecomment-891991814
+mongo-1     | 
+mongo-1 exited with code 132
+backend-1   | 
+backend-1   | > backend@1.0.0 start
+backend-1   | > nodemon -L src/server.js
+backend-1   | 
+backend-1   | [nodemon] 3.1.0
+backend-1   | [nodemon] to restart at any time, enter `rs`
+backend-1   | [nodemon] watching path(s): backend/src/**/*
+backend-1   | [nodemon] watching extensions: js,json
+backend-1   | [nodemon] starting `node src/server.js`
+frontend-1  | 
+frontend-1  | > frontend@0.1.0 start
+frontend-1  | > react-scripts start
+frontend-1  | 
+backend-1   | mongodbUrl: mongodb://mongo:27017/mydatabase
+backend-1   | Server running on port 8080
+frontend-1  | (node:25) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+frontend-1  | (Use `node --trace-deprecation ...` to show where the warning was created)
+frontend-1  | (node:25) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+frontend-1  | Starting the development server...
+frontend-1  | 
+frontend-1  | One of your dependencies, babel-preset-react-app, is importing the
+frontend-1  | "@babel/plugin-proposal-private-property-in-object" package without
+frontend-1  | declaring it in its dependencies. This is currently working because
+frontend-1  | "@babel/plugin-proposal-private-property-in-object" is already in your
+frontend-1  | node_modules folder for unrelated reasons, but it may break at any time.
+frontend-1  | 
+frontend-1  | babel-preset-react-app is part of the create-react-app project, which
+frontend-1  | is not maintianed anymore. It is thus unlikely that this bug will
+frontend-1  | ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+frontend-1  | your devDependencies to work around this error. This will make this message
+frontend-1  | go away.
+frontend-1  |   
+frontend-1  | Compiled with warnings.
+frontend-1  | 
+frontend-1  | [eslint] 
+frontend-1  | src/components/LandingPage/LandingPage.js
+frontend-1  |   Line 5:8:  'axios' is defined but never used  no-unused-vars
+frontend-1  | 
+frontend-1  | src/components/QuizPage/QuizPage.js
+frontend-1  |   Line 48:5:  React Hook useEffect has missing dependencies: 'settings.difficulty', 'settings.numberOfQuestions', 'settings.selectedCategory.name', and 'showReview'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-1  | 
+frontend-1  | Search for the keywords to learn more about each warning.
+frontend-1  | To ignore, add // eslint-disable-next-line to the line before.
+frontend-1  | 
+frontend-1  | WARNING in [eslint] 
+frontend-1  | src/components/LandingPage/LandingPage.js
+frontend-1  |   Line 5:8:  'axios' is defined but never used  no-unused-vars
+frontend-1  | 
+frontend-1  | src/components/QuizPage/QuizPage.js
+frontend-1  |   Line 48:5:  React Hook useEffect has missing dependencies: 'settings.difficulty', 'settings.numberOfQuestions', 'settings.selectedCategory.name', and 'showReview'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-1  | 
+frontend-1  | webpack compiled with 1 warning
+frontend-1  | Compiling...
+frontend-1  | Compiled with warnings.
+frontend-1  | 
+frontend-1  | [eslint] 
+frontend-1  | src/components/LandingPage/LandingPage.js
+frontend-1  |   Line 5:8:  'axios' is defined but never used  no-unused-vars
+frontend-1  | 
+frontend-1  | src/components/QuizPage/QuizPage.js
+frontend-1  |   Line 48:5:  React Hook useEffect has missing dependencies: 'settings.difficulty', 'settings.numberOfQuestions', 'settings.selectedCategory.name', and 'showReview'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-1  | 
+frontend-1  | Search for the keywords to learn more about each warning.
+frontend-1  | To ignore, add // eslint-disable-next-line to the line before.
+frontend-1  | 
+frontend-1  | WARNING in [eslint] 
+frontend-1  | src/components/LandingPage/LandingPage.js
+frontend-1  |   Line 5:8:  'axios' is defined but never used  no-unused-vars
+frontend-1  | 
+frontend-1  | src/components/QuizPage/QuizPage.js
+frontend-1  |   Line 48:5:  React Hook useEffect has missing dependencies: 'settings.difficulty', 'settings.numberOfQuestions', 'settings.selectedCategory.name', and 'showReview'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-1  | 
+frontend-1  | webpack compiled with 1 warning
+backend-1   | MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo
+backend-1   |     at _handleConnectionErrors (/usr/src/app/node_modules/mongoose/lib/connection.js:875:11)
+backend-1   |     at NativeConnection.openUri (/usr/src/app/node_modules/mongoose/lib/connection.js:826:11)
+backend-1   |     at runNextTicks (node:internal/process/task_queues:60:5)
+backend-1   |     at listOnTimeout (node:internal/timers:540:9)
+backend-1   |     at process.processTimers (node:internal/timers:514:7) {
+backend-1   |   reason: TopologyDescription {
+backend-1   |     type: 'Unknown',
+backend-1   |     servers: Map(1) { 'mongo:27017' => [ServerDescription] },
+backend-1   |     stale: false,
+backend-1   |     compatible: true,
+backend-1   |     heartbeatFrequencyMS: 10000,
+backend-1   |     localThresholdMS: 15,
+backend-1   |     setName: null,
+backend-1   |     maxElectionId: null,
+backend-1   |     maxSetVersion: null,
+backend-1   |     commonWireVersion: 0,
+backend-1   |     logicalSessionTimeoutMinutes: null
+backend-1   |   },
+backend-1   |   code: undefined
+backend-1   | }
